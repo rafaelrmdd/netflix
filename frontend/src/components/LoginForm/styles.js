@@ -7,10 +7,33 @@ export const LoginFormContainer = styled.div`
     font-family: "Roboto", sans-serif;
 
     form{
-        height: 541px;
-        width: 460px;
-        background: black;
+        min-height: 785px;
+        width: 450px;
+        background: #00000099;
         padding: 48px 68px;
+
+        .errorEmailCelphone{
+            color: #EB3942;
+            font-size: 13px;
+            margin-bottom: 15px;
+
+            .errorIcon{
+                position: relative;
+                top: 4px;
+                margin-right: 3px;
+            }
+        }
+
+        .errorPassword{
+            color: #EB3942;
+            font-size: 13px;
+
+            .errorIcon{
+                position: relative;
+                top: 4px;
+                margin-right: 3px;
+            }
+        }
 
         p{
             color: #FFFFFF;
@@ -42,8 +65,8 @@ export const InputText = styled.input`
     padding: 24px 16px 24px 16px;
     background: transparent;
     border: 1px solid #333333;
-    margin-bottom: 15px;
     font-size: 16px;
+    color: #FFFFFF;
 `
 
 export const InputButtonEntrar = styled.button`
@@ -55,6 +78,11 @@ export const InputButtonEntrar = styled.button`
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 20px;
+    margin-top: 15px;
+
+    &:hover{
+        cursor: pointer;
+    }
 `
 
 export const InputButtonCodeAcess = styled.button`
@@ -66,6 +94,10 @@ export const InputButtonCodeAcess = styled.button`
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 20px;
+
+    &:hover{
+        cursor: pointer;
+    }
 `
 
 export const ForgotPasswordAnchor = styled.a`
@@ -115,4 +147,24 @@ export const SubscribeContainer = styled.div`
         color: #FFFFFF;
         margin-left: 5px;
     }
+`
+
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+`
+
+export const LearnMoreContainer = styled.div`
+        margin-top: 20px;
+
+        .learnMore{
+            color: #0071EB;
+            font-size: 13px;
+        }
+
+        .learnMoreText{
+            color: #8C8C8C;
+            font-size: 13px;
+        }
 `
