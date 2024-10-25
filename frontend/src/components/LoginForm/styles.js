@@ -15,7 +15,8 @@ export const LoginFormContainer = styled.div`
         .errorEmailCelphone{
             color: #EB3942;
             font-size: 13px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            margin-top: 5px;
 
             .errorIcon{
                 position: relative;
@@ -27,6 +28,8 @@ export const LoginFormContainer = styled.div`
         .errorPassword{
             color: #EB3942;
             font-size: 13px;
+            margin-bottom: 5px;
+            margin-top: 5px;
 
             .errorIcon{
                 position: relative;
@@ -78,7 +81,7 @@ export const InputButtonEntrar = styled.button`
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 20px;
-    margin-top: 15px;
+    margin-top: 1px;
 
     &:hover{
         cursor: pointer;
@@ -152,7 +155,7 @@ export const SubscribeContainer = styled.div`
 export const InputContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    margin-bottom: 15px;
 `
 
 export const LearnMoreContainer = styled.div`
